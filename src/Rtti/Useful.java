@@ -5,7 +5,7 @@ package Rtti;
  * @Date: 2019/3/3
  * @Time: 23:39
  * @Description: LiuHao 2019/3/3 23:39
- * 向上造型
+ * 向上转型
  */
 public class Useful {
          public void f (){
@@ -32,7 +32,7 @@ public class Useful {
         x[1].f();
         x[0].upUseful(x[1]);
         ((MoreUseful) x[1]).u();
-        //向下造型异常错误
+        //向下转型异常错误
         ((MoreUseful) x[0]).u();
     }
 }
