@@ -23,7 +23,7 @@ public class CountProxy implements Count {
         System.out.println("事务处理之前");
         // 调用委托类的方法;
         countImpl.queryCount();
-        
+
 
         System.out.println("事务处理之后");
     }

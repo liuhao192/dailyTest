@@ -32,8 +32,16 @@ public class Useful {
         x[1].f();
         x[0].upUseful(x[1]);
         ((MoreUseful) x[1]).u();
-        //向下转型异常错误
-        ((MoreUseful) x[0]).u();
+//避免  向下转型异常错误
+        if (x[0] instanceof MoreUseful) {
+            //向下转型异常错误
+            ((MoreUseful) x[0]).u();
+
+
+        }
+
+
+
     }
 }
 
