@@ -48,8 +48,10 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        int[][] test = new int[][]{{1, 1, 0, 0, 0}, {1, 1, 0, 0, 0}, {0, 0, 0, 1, 1}, {0, 0, 0, 1, 1}};
-        Solution solution = new Solution();
-        System.out.println(solution.maxAreaOfIsland(test));
+        //int[][] test = new int[][]{{1, 1, 0, 0, 0}, {1, 1, 0, 0, 0}, {0, 0, 0, 1, 1}, {0, 0, 0, 1, 1}};
+        //Solution solution = new Solution();
+       // System.out.println(solution.maxAreaOfIsland(test));
+        System.out.println(Runtime.getRuntime().availableProcessors());
+
     }
 }

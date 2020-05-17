@@ -8,11 +8,12 @@ package leetcode.mySqrt;
  */
 public class Solution {
     public int mySqrt(int x) {
+
         int l = 0;
         int r = x;
         int res = 0;
         while (l <= r) {
-            int mid = l + (r - 1) / 2;
+            int mid = l + (r - 1)/ 2;
             if ((long)mid * mid <= x){
                 res = mid;
                 l = mid + 1;

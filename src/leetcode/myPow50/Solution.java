@@ -8,21 +8,24 @@ package leetcode.myPow50;
  */
 public class Solution {
     public double myPow(double x, int n) {
-        long N=n;
-        return N>=0?longPow(x,N):1.0/longPow(x,-N);
+        long N = n;
+        return N >= 0 ? longPow(x, N) : 1.0 / longPow(x, -N);
     }
 
     public double longPow(double x, long n) {
         double ans = 1.0;
         while (n != 0) {
+            //是否为偶数
             if ((n & 1) != 0) {
                 ans = ans * x;
             }
             x = x * x;
+            //往右位移 9-->4-->2-->1-->0
             n >>= 1;
         }
         return ans;
     }
+
     public static void main(String[] args) {
         Solution solution = new Solution();
         System.out.println(solution.myPow(1.00000, 9));

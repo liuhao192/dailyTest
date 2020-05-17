@@ -31,4 +31,12 @@ public class Solution {
         }
         return list;
     }
+
+    public static void main(String[] args) {
+        int max = 10, min = 1;
+        for (int i = 0; i < 20; i++) {
+            System.out.println((int) (Math.random() * (max - min) + min));
+        }
+
+    }
 }
